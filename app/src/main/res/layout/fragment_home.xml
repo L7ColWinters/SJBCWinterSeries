@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eventresultsgathering.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment_welcome_message_signin"
+        android:id="@+id/please_sign_in_message"
+        android:layout_margin="@dimen/home_fragment_textview_margin"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_out_container"
+        android:layout_below="@id/please_sign_in_message"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/home_fragment_textview_margin">
+        <!-- sign in button , set to inivisible just to see what it looks like without button present-->
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_out_button"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="@string/sign_out"
+            android:background="@color/niceShadeOfLightGreen"
+            android:padding="@dimen/home_fragment_textview_margin"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment_welcome_message_results"
+        android:id="@+id/view_results_message"
+        android:layout_below="@id/sign_in_out_container"
+        android:layout_margin="@dimen/home_fragment_textview_margin"
+        android:linksClickable="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment_welcome_message_push_reminder"
+        android:id="@+id/push_settings_reminder_message"
+        android:layout_below="@id/view_results_message"
+        android:layout_margin="@dimen/home_fragment_textview_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment_welcome_message_signature"
+        android:id="@+id/signature_message"
+        android:layout_below="@id/push_settings_reminder_message"
+        android:layout_margin="@dimen/home_fragment_textview_margin"/>
+
+</RelativeLayout>

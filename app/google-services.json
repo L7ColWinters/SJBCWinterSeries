@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "sjbc-winter-series",
+    "project_number": "680783594978",
+    "name": "SJBC Winter Series"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680783594978:android:3c23cd90ad024a29",
+        "client_id": "android:sjbc.l7colwinters.sjbcwinterseries",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "sjbc.l7colwinters.sjbcwinterseries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680783594978-vho314e9igdkn254ic35gcah235nroed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sjbc.l7colwinters.sjbcwinterseries",
+            "certificate_hash": "5982D2663FD00EEF06B6EB8800282753005ADBA4"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

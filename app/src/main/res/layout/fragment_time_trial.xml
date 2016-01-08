@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sjbc.l7colwinters.sjbcwinterseries.eventresultsgathering.TimeTrialStartingFragment"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/FragmentHeaderLayout"
+        layout="@layout/fragment_time_trial_start_header"
+         />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/start_times_list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/time_trial_list_item_margin"
+        />
+
+</LinearLayout>

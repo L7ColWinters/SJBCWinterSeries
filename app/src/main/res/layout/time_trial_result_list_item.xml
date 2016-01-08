@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/default_result_value"
+        android:id="@+id/rider_place"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/time_trial_list_item_margin"/>
+
+    <sjbc.l7colwinters.sjbcwinterseries.custom.views.LongClickEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/default_result_value"
+        android:textAlignment="center"
+        android:id="@+id/rider_number"
+        android:editable="false"
+        android:layout_margin="@dimen/time_trial_list_item_margin"/>
+
+    <sjbc.l7colwinters.sjbcwinterseries.custom.views.LongClickEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/default_result_value"
+        android:textAlignment="center"
+        android:editable="false"
+        android:id="@+id/finish_time"
+        android:layout_margin="@dimen/time_trial_list_item_margin"/>
+</LinearLayout>
